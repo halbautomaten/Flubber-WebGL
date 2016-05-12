@@ -2,8 +2,8 @@ var canvas, gl, defaultShader, quad, gradient, updateScheduled=false, mouseX =0,
 var dpr = (window.devicePixelRatio > 1) ? 1.3 : 1;
 
 var assets = {
-  vertex: "../../../work/flubber/shaders/vertex.shader",
-  fragment: "../../../work/flubber/shaders/fragment.shader"
+  vertex: "shaders/vertex.shader",
+  fragment: "shaders/fragment.shader"
 };
 
 
@@ -78,7 +78,7 @@ function initWebGL(canvas, callback) {
 
   //texture
   gradient = twgl.createTexture(gl,{
-    src: "../../../work/flubber/img/gradient.png"
+    src: "img/gradient.png"
   },callback);
 }
 
